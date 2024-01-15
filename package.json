@@ -1,0 +1,11 @@
+{
+  "name": "lanchoneteapi",
+  "version": "1.0.0",
+  "description": "projeto para controlar \u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Cde \u001b[D\u001b[D\u001b[D\u001b[D\u001b[Cpara \u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C estoque de produtos de uma lanchonete.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ricardo Farias de Souza \u001b[D\u001b[3~",
+  "license": "ISC"
+}
