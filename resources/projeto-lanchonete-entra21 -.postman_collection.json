@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "9f57c578-44b2-4e4c-a133-a576bd25a756",
+		"name": "projeto-lanchonete-entra21 -",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14068678"
+	},
+	"item": [
+		{
+			"name": "criar produto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome_produto\": \"fritas\",\r\n    \"descrição\": \"porção de batata frita (300g).\",\r\n    \"preco_unitario\": \"6.00\"\r\n}\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/produtos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscar todos os produtos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/produtos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscar produtos por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/produtos/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"produtos",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "DGKSYkJjLPwKnEmrlRvJ"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "atualizar produto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome_produto\": \"refrigerante de fritas\",\r\n    \"descrição\": \"porção de refrigerante na batata frita (300g).\",\r\n    \"preco_unitario\": \"99.00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/produtos/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"produtos",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "DGKSYkJjLPwKnEmrlRvJ"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletar produto",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/produtos/DGKSYkJjLPwKnEmrlRvJ",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"produtos",
+						"DGKSYkJjLPwKnEmrlRvJ"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
