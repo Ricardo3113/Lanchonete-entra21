@@ -3,7 +3,9 @@ const app = express();
 
 // Configuração do Firebase
 const admin = require('firebase-admin');
-const serviceAccount = require('C://Entra21/Node.JS/Projeto-Lanchonete/Lanchonete-entra21');
+
+// verificar se o endereço abaixo precisa de alterado para a máquina do SENAI
+const serviceAccount = require('C://Entra21/Node.JS/Projeto-Lanchonete//Lanchonete-entra21');
 
 // Middlewares
 app.use(express.json());
