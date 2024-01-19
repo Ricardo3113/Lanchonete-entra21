@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "d24917cd-adf7-418a-8d57-ec207b721449",
+		"name": "projeto-lanchonete-entra21 - API de saida de produtos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14068678"
+	},
+	"item": [
+		{
+			"name": "criar saida",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome_produto\": \"fritas\",\r\n    \"descrição\": \"porção de batata frita (300g).\",\r\n    \"preco_unitario\": \"6.00\"\r\n}\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/saidas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"saidas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscar todas as saidas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/saidas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"saidas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscar saidas por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/saidas/MaZXDCH5k5BAvYyRE1Qz",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"saidas",
+						"MaZXDCH5k5BAvYyRE1Qz"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "atualizar saida",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome_produto\": \"refrigerante de fritas\",\r\n    \"descrição\": \"porção de refrigerante na batata frita (300g).\",\r\n    \"preco_unitario\": \"99.00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/produtos/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"produtos",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "DGKSYkJjLPwKnEmrlRvJ"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletar saida",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/saida/DGKSYkJjLPwKnEmrlRvJ",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"saida",
+						"DGKSYkJjLPwKnEmrlRvJ"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

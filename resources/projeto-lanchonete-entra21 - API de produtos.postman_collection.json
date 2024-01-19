@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "9f57c578-44b2-4e4c-a133-a576bd25a756",
-		"name": "projeto-lanchonete-entra21 -",
+		"name": "projeto-lanchonete-entra21 - API de produtos",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "14068678"
 	},
@@ -61,7 +61,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/api/produtos/:id",
+					"raw": "http://localhost:3000/api/produtos/MaZXDCH5k5BAvYyRE1Qz",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -70,13 +70,7 @@
 					"path": [
 						"api",
 						"produtos",
-						":id"
-					],
-					"variable": [
-						{
-							"key": "id",
-							"value": "DGKSYkJjLPwKnEmrlRvJ"
-						}
+						"MaZXDCH5k5BAvYyRE1Qz"
 					]
 				}
 			},
