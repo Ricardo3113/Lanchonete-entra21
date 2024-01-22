@@ -2,13 +2,21 @@ const db = require('../firebaseConfig');
 
 const EntradaController = {
     createEntrada: async (req, res) => {
-        try {
-            const entradaRef = db.collection('entradas').doc();
-            await entradaRef.set(req.body);
-            res.status(201).json({ id: entradaRef.id, ...req.body });
-        } catch (error) {
-            res.status(500).send(error.message);
+
+        const produtoRef = db.collection('produtos').doc('id_produto');
+        const produtoDoc = await produtoRef.get();
+
+        if (!produtoDoc.exists) {
+            return res.status(404).send('Produto inválido')            
         }
+        
+        try {
+                const entradaRef = db.collection('produtos').doc();
+                await entradaRef.set(req.body);
+                res.status(201).json({ id: entradaRef.id, ...req.body });
+            } catch (error) {
+                res.status(500).send(error.message);
+            }
     },
 
     getAllEntradas: async (req, res) => {

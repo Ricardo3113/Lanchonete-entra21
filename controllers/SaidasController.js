@@ -2,6 +2,14 @@ const db = require('../firebaseConfig');
 
 const SaidaController = {
     createSaida: async (req, res) => {
+
+        const produtoRef = db.collection('produtos').doc('id_produto');
+        const produtoDoc = await produtoRef.get();
+
+        if (!produtoDoc.exists) {
+            return res.status(404).send('Produto Inválido')
+        }
+
         try {
             const saidaRef = db.collection('saidas').doc();
             await saidaRef.set(req.body);

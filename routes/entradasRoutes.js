@@ -1,20 +1,20 @@
-const express = require('express');
-const router = express.Router();
-const ProdutoController = require('../controllers/ProdutoController');
+const express = require('express');         
+const router = express.Router();        
+const EntradasController = require('../controllers/entradasController');
 
 // Rota para criar um novo produto
-router.post('/entradas', ProdutoController.createProduto);
+router.post('/entradas', EntradasController.createEntrada);
 
 // Rota para obter todos os produtos
-router.get('/entradas', ProdutoController.getAllProdutos);
+router.get('/entradas', EntradasController.getAllEntradas);
 
 // Rota para obter um produto pelo ID
-router.get('/entradas/:id', ProdutoController.getProdutoById);
+router.get('/entradas/:id', EntradasController.getEntradaById);
 
 // Rota para atualizar um produto
-router.put('/entradas/:id', ProdutoController.updateProduto);
+router.put('/entradas/:id', EntradasController.updateEntrada);
 
 // Rota para deletar um produto
-router.delete('/entradas/:id', ProdutoController.deleteProduto);
+router.delete('/entradas/:id', EntradasController.deleteEntrada);
 
 module.exports = router;
