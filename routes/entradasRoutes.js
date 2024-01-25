@@ -3,7 +3,7 @@ const router = express.Router();
 const EntradasController = require('../controllers/entradasController');
 
 // Rota para criar um novo produto
-router.post('/entradas', EntradasController.createEntrada);
+router.post('/entradas/:id', EntradasController.createEntrada);
 
 // Rota para obter todos os produtos
 router.get('/entradas', EntradasController.getAllEntradas);
