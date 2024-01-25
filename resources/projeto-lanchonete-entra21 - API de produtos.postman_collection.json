@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nome_produto\": \"fritas\",\r\n    \"descrição\": \"porção de batata frita (300g).\",\r\n    \"preco_unitario\": \"6.00\"\r\n}\r\n\r\n\r\n",
+					"raw": "{\r\n    \"preco_unitario\": \"5.00\",\r\n    \"nome_produto\": \"laranjinha\",\r\n    \"descrição\": \"refrigerante de laranja lima.\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -61,7 +61,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/api/produtos/MaZXDCH5k5BAvYyRE1Qz",
+					"raw": "http://localhost:3000/api/produtos/csdcsdcsdcsd",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -70,7 +70,7 @@
 					"path": [
 						"api",
 						"produtos",
-						"MaZXDCH5k5BAvYyRE1Qz"
+						"csdcsdcsdcsd"
 					]
 				}
 			},
@@ -118,7 +118,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/api/produtos/DGKSYkJjLPwKnEmrlRvJ",
+					"raw": "http://localhost:3000/api/produtos/bComzLT7sxZB4fN6VyfW",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -127,7 +127,7 @@
 					"path": [
 						"api",
 						"produtos",
-						"DGKSYkJjLPwKnEmrlRvJ"
+						"bComzLT7sxZB4fN6VyfW"
 					]
 				}
 			},
