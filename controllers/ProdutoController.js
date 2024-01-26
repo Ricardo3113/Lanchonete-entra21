@@ -2,7 +2,7 @@ const db = require('../firebaseConfig');
 
 const ProdutoController = {
     createProduto: async (req, res) => {        
-        try {
+        try {            
             const produtoRef = db.collection('produtos').doc();
             await produtoRef.set(req.body);
             res.status(201).json({ id: produtoRef.id, ...req.body });
